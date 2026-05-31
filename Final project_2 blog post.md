@@ -106,4 +106,6 @@ The feature **`age_entropy`** had the greatest impact on the clustering results
 
 
 
-This project integrates datasets collected from the Seoul Open Data Plaza, creates a unified dataset, and applies clustering techniques to identify meaningful patterns. The results reveal 10 distinct clusters, strong relationships among features, and indicate that `age_entropy` is the most influential feature according to SHAP analysis.
+This project integrates datasets collected from the Seoul Open Data Plaza, creates a unified dataset.
+The results reveal 10 distinct clusters, strong relationships among features, 
+`age_entropy` is the most influential feature according to SHAP analysis.
