@@ -5,7 +5,26 @@ This study performed a Clustering Analysis of Seoul's public bicycle stations by
 To categorize the stations, the original variables were first reduced to 12 latent factors using Principal Component Analysis (PCA). The stations were clustered using the K-means algorithm, with the optimal number of clusters determined by evaluating both the Elbow method and Silhouette scores.
  The resulting clusters were then interpreted through cluster-mean heatmaps, ANOVA, Random Forest classification, and SHAP. 
 
- 
+## PCA
+
+<p align="center">
+  <img src="figures/scree plot.png" width="1200">
+</p
+
+optimal PCA number is 12 by 80% Rule
+
+<p align="center">
+  <img src="figures/PC12.png" width="1200">
+</p
+
+The PCA biplot indicates that PC1 primarily captures network centrality characteristics, 
+as it is strongly associated with degree centrality, closeness centrality, destination entropy, and inflow–outflow ratio.
+
+PC2 represents commuter demand, 
+showing positive associations with rush-hour usage, peak concentration, and middle-aged users, while being negatively associated with hourly entropy.
+
+High PC2 scores are primarily commuter-oriented
+
 ## Cluster Interpretation
 
 <p align="center">
