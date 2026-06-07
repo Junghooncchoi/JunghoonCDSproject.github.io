@@ -7,7 +7,15 @@ To categorize the stations, the original variables were first reduced to 12 late
  
 ## Cluster Interpretation
 
+<p align="center">
+  <img src="figures/Figure10_SHAP_All_Clusters.png" width="1200">
+</p>
+
 ### Cluster 0 – Senior Residential Stations
+
+<p align="center">
+  <img src="figures/cluster_0_shap.png" width="900">
+</p>
 
 This cluster is characterized by relatively high senior usage and older age composition, while showing low commuter demand, low tourist mobility, and very limited rack infrastructure.
 These stations appear to serve residential neighborhoods where daily transportation needs are dominated by residents rather than commuters or tourists. 
@@ -15,9 +23,18 @@ The low network centrality further suggests that these stations are located away
  
 ### Cluster 1 – Commuter Hubs
 
+<p align="center">
+  <img src="figures/cluster_1_shap.png" width="900">
+</p>
+
+
 Cluster 1 exhibits the highest commuter demand among all clusters and above-average tourist mobility. However, network centrality and rack infrastructure remain relatively low.
  
 ### Cluster 2 – Network Core Stations
+
+<p align="center">
+  <img src="figures/cluster_2_shap.png" width="900">
+</p>
 
 Network Centrality and Commuter Demand are below average.
 Because no specific behavioral pattern strongly dominates this cluster, these stations appear to represent peripheral locations that are weakly connected to the overall bike-sharing network. 
@@ -25,15 +42,27 @@ They serve as general-purpose stations without specialized usage characteristics
  
 ### Cluster 3 – Infrastructure Hubs
 
+<p align="center">
+  <img src="figures/cluster_3_shap.png" width="900">
+</p>
+
 Stations in Cluster 3 have very high rack infrastructure and above-average network centrality, while senior usage is relatively low.
 These stations likely operate as important transfer points within the system. Their large parking capacity allows them to support substantial bicycle circulation and redistribution activities.
  
 ### Cluster 4 – Tourist Destinations
 
+<p align="center">
+  <img src="figures/cluster_4_shap.png" width="900">
+</p>
+
 Cluster 4 is distinguished by extremely high tourist mobility, the strongest value observed among all clusters.
 At the same time, commuter demand is relatively low.
  
 ### Cluster 5 – Urban Core Stations
+
+<p align="center">
+  <img src="figures/cluster_5_shap.png" width="900">
+</p>
 
 Cluster 5 demonstrates high network centrality combined with moderate senior usage and relatively low tourist activity.
 It is less tourism-oriented and more focused on supporting everyday urban mobility.
