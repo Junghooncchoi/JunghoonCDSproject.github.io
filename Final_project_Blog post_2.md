@@ -4,6 +4,7 @@
 This study performed a Clustering Analysis of Seoul's public bicycle stations by incorporating usage patterns and network characteristics, rather than relying solely on location-based criteria.
 To categorize the stations, the original variables were first reduced to 12 latent factors using Principal Component Analysis (PCA). The stations were clustered using the K-means algorithm, with the optimal number of clusters determined by evaluating both the Elbow method and Silhouette scores.
  The resulting clusters were then interpreted through cluster-mean heatmaps, ANOVA, Random Forest classification, and SHAP. 
+
  
 ## Cluster Interpretation
 
@@ -66,8 +67,17 @@ At the same time, commuter demand is relatively low.
 
 Cluster 5 demonstrates high network centrality combined with moderate senior usage and relatively low tourist activity.
 It is less tourism-oriented and more focused on supporting everyday urban mobility.
- 
+
+<p align="center">
+  <img src="figures/SHAP summary.png" width="1200">
+</p>
+
+The SHAP interaction plot reveals that Network(network centrality) is the most influential interaction feature in the model.
+
+Rack capacity(station capacity) effects between Rack and Age, Senior, and Network
+
 ## Explain Results
+
 
 ANOVA was conducted to determine whether the latent factors differed significantly across clusters.
 1.	Network Centrality (F = 2869.27) 
